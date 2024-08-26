@@ -9,10 +9,7 @@ class Database:
     def create_connection(self):
         try:
             self.conn = mysql.connector.connect(
-                user = 'rajeev',
-                password = 'Welcome@123',
-                host = '192.168.12.91',
-                database = 'Lakshmi'
+                # database connection details 
             )  
             self.curr = self.conn.cursor()
             self.logger.info(f'Database is connected successfully ')
